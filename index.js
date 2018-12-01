@@ -46,11 +46,14 @@ if(command === "say") {
 });
 
 client.on('message', (message) => {
-if(message.content.includes('nut')) {
-   message.reply('PERVERT!!'); 
+  if(message.content.includes('nut')) {
+    message.channel.send('PERVERT!!');
+});
   
-  }
-
+client.on('message', (message) => {
+  if(message.content.includes('hammann')) {
+    message.channel.send('??');
+  
 });
 
 client.login(config.token);
