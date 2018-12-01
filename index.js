@@ -58,19 +58,12 @@ if(command === "poke") {
   
 });
 
-const brunch = ['Yum','more responses']
-//Later in code
-client.on('message', msg => {
-  
-if (msg.content === 'brunch') {
-var response = brunch \[Math.floor(Math.random()\*brunch .length)\];
+client.on('message' , message => {
+//autoresponses to phrases
+    if(message.content.includes ("lewd")){
+            megadeath.includes(megadeath) // return false;
+                message.channel.send('OI! PERVERT!!!');
 
-	msg.reply('POLICE OFFICER!');
-	msg.reply('PERVERTS!');
-	msg.reply("YOU'RE SICK!");
-	msg.reply('OI!');
-
-}
 });
-  
+
 client.login(config.token);
