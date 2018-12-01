@@ -34,6 +34,12 @@ client.on("message", async message => {
     message.channel.send(`Whaa?! Get away from me! Pervert! PERVERT! OFFICER!!!`);
   }
   
+  if(command === "why") {
+    // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
+    // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
+    message.channel.send(`Because you're a perverts.`);
+  }
+  
 if(command === "poke") {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
     // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
