@@ -61,7 +61,7 @@ if(command === "poke") {
 client.on('message' , message => {
 //autoresponses to phrases
     if(message.content.includes ("lewd")){
-            megadeath.includes(megadeath) // return false;
+            lewd.includes(lewd) // return false;
                 message.channel.send('OI! PERVERT!!!');
 
 });
