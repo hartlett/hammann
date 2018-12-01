@@ -56,6 +56,8 @@ if(command === "poke") {
     message.channel.send(sayMessage);
   }
   
+});
+
 const brunch = ['Yum','more responses']
 //Later in code
 client.on('message', msg => {
@@ -63,11 +65,12 @@ client.on('message', msg => {
 if (msg.content === 'brunch') {
 var response = brunch \[Math.floor(Math.random()\*brunch .length)\];
 
-	msg.reply("aaaaaa");
+	msg.reply('POLICE OFFICER!');
+	msg.reply('PERVERTS!');
+	msg.reply("YOU'RE SICK!");
+	msg.reply('OI!');
 
 }
 });
   
-});
-
 client.login(config.token);
