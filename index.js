@@ -55,7 +55,19 @@ if(command === "poke") {
     // And we get the bot to say the thing: 
     message.channel.send(sayMessage);
   }
+  
+const brunch = ['Yum','more responses']
+//Later in code
+client.on('message', msg => {
+  
+if (msg.content === 'brunch') {
+var response = brunch \[Math.floor(Math.random()\*brunch .length)\];
 
+	msg.reply("aaaaaa");
+
+}
+});
+  
 });
 
 client.login(config.token);
