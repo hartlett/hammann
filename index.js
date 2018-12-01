@@ -48,11 +48,10 @@ if(command === "say") {
 client.on('message', (message) => {
   if(message.content.includes('nut')) {
     message.reply('PERVERT!!');
-});
-  
-client.on('message', (message) => {
+  }
   if(message.content.includes('hammann')) {
     message.reply('?? What? Pervert...');
+}
   
 });
 
