@@ -46,7 +46,7 @@ if(command === "say") {
 });
 
 client.on('message', (message) => {
-if(message.content.includes('nut') {
+if(message.content.includes('nut')) {
    message.reply('PERVERT!!'); 
   
   }
