@@ -6,9 +6,9 @@ client.on("ready", () => {
   client.user.setActivity(`Maid at Room 5 Sandy`);
 });
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find(ch => ch.name === 'join-logs');
+  const channel = member.guild.channels.find(ch => ch.name === 'room-5');
   if (!channel) return;
-  channel.send(`Welcome to the server, ${member}! I'm the maid serving this Server, Hammann. *Remember, don't be like others here, they're all pervert.*`);
+  channel.send(`Welcome to the server, ${member}! I'm the maid serving this Server, Hammann. *Remember, don't be like others here, they're all perverts.*`);
 });
 
 client.on("message", async message => {
