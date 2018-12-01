@@ -36,8 +36,8 @@ if(command === "poke") {
     message.channel.send(`Oi! Don't POKE me if you have nothing to do with me, you PERVERT!`);
   }
 
-  if(command === "say") {
-    const sayMessage = args.join(" ");
+if(command === "say") {
+  const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
   
