@@ -14,15 +14,15 @@ client.on('guildMemberAdd', member => {
 client.on("message", async message => {
   if(message.author.bot) return;
   
+  if(message.content.includes("thighs")){
+    message.channel.send('PERVERT!!');
+ }
+  
   if(message.content.indexOf(config.prefix) !== 0) return;
     // command = say
   // args = ["Is", "this", "the", "real", "life?"]
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  
- if(message.content.includes("thighs")){
-    message.channel.send('PERVERT!!');
- }
   
  if(command === "ping") {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
