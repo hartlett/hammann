@@ -20,6 +20,10 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
+ if(message.content.includes("thighs")){
+    message.channel.send('PERVERT!!');
+ }
+  
  if(command === "ping") {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
     // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
@@ -56,14 +60,6 @@ if(command === "poke") {
     message.channel.send(sayMessage);
   }
   
-});
-
-client.on('message' , message => {
-//autoresponses to phrases
-    if(message.content.includes ("lewd")){
-            lewd.includes(lewd) // return false;
-                message.channel.send('OI! PERVERT!!!');
-
 });
 
 client.login(config.token);
