@@ -14,7 +14,7 @@ client.on('guildMemberAdd', member => {
 client.on("message", async message => {
   if(message.author.bot) return;
   
-  if(message.content.includes("thighs")){
+  if(message.content.includes === "thighs"){
     message.channel.send('PERVERT!!');
  }
   
