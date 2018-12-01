@@ -45,7 +45,7 @@ if(command === "say") {
   
 });
 
-client.on('message', (message) => {
+bot.user('message', (message) => {
   if(message.content.includes('nut')) {
     message.reply('PERVERT!!');
   }
