@@ -49,7 +49,7 @@ bot.user('message', (message) => {
   if(message.content.includes('nut')) {
     message.reply('PERVERT!!');
   }
-  if(message.content.includes('hammann')) {
+  if(message.content.includes('hammann are you there')) {
     message.reply('?? What? Pervert...');
 }
   
