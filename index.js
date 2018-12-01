@@ -43,11 +43,14 @@ if(command === "say") {
   
   }
   
-if(message.content ("nut") {
-   message.reply('PERVERT!!');
+});
+
+client.on('message', (message) => {
+if(message.content.includes('nut') {
+   message.reply('PERVERT!!'); 
   
   }
-  
+
 });
 
 client.login(config.token);
