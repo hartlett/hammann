@@ -48,7 +48,7 @@ if(command === "poke") {
 client.on('message', message => {
   
   if(message.content.includes('nut')) {
-    message.reply('PERVERT!!');
+    message.reply('PERVERT!!')
   
 });
   
