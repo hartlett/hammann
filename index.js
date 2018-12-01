@@ -47,12 +47,12 @@ if(command === "say") {
 
 client.on('message', (message) => {
   if(message.content.includes('nut')) {
-    message.channel.send('PERVERT!!');
+    message.reply('PERVERT!!');
 });
   
 client.on('message', (message) => {
   if(message.content.includes('hammann')) {
-    message.channel.send('??');
+    message.reply('?? What? Pervert...');
   
 });
 
