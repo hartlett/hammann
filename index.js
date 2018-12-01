@@ -47,14 +47,9 @@ if(command === "poke") {
 
 client.on('message', message => {
   
-  if(message.content.includes('thighs')) {
+  if(message.content.includes('thighs','loli','Thighs','Loli','THIGHS','LOLI')) {
     message.reply('PERVERT!!');
  }
-  
-  if(message.content.includes('loli')) {
-    message.reply('PERVERT!!');
-
-  }
 
 });
   
