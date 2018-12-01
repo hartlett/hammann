@@ -44,7 +44,7 @@ if(command === "say") {
   }
   
 if(message.content ("nut") {
-   message.reply('PERVERT!!')
+   message.reply('PERVERT!!');
   
   }
   
