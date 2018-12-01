@@ -14,14 +14,6 @@ client.on('guildMemberAdd', member => {
 client.on("message", async message => {
   if(message.author.bot) return;
   
-  if(message.content.includes("thighs")) {
-    message.channel.send('PERVERT!!');
- }
-  
-  if(message.content.includes("loli")) {
-    message.channel.send('PERVERT!!');
- }
-  
   if(message.content.indexOf(config.prefix) !== 0) return;
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
@@ -48,8 +40,23 @@ if(command === "poke") {
     const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
+  
   }
   
 });
+
+client.on('message', message => {
+  
+  if(message.content.includes('thighs')) {
+    message.reply('PERVERT!!');
+ }
+  
+  if(message.content.includes('loli')) {
+    message.reply('PERVERT!!');
+
+  }
+
+});
+  
 
 client.login(config.token);
