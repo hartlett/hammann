@@ -55,7 +55,7 @@ client.on('message', message => {
     message.reply('Hello! *pervert...*')
   }
   
-  if(message.content('Hm...')) {
+  if(message.content('Hm')) {
     message.reply('??')
   }
   
